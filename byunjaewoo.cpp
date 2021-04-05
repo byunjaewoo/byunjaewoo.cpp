@@ -21,6 +21,17 @@ namespace byunjaewoo {
         if(x % 2) res = (res * a) % Mod;
         return res;
     }
+    class PrefixSum {
+    public:
+        void init(vector<long long> V) {
+            int N = V.size();
+            A[0] = V[0];
+            for(int i=1; i<N; i++) A[i] = A[i - 1] + V[i];
+        }
+        long long Query(int l, int r) {return A[r] - A[l - 1];}
+    private:
+        vector<long long> A;
+    };
 }
 using namespace byunjaewoo;
 
