@@ -1,5 +1,5 @@
 # Plan:
-* [ ] Factorial
+* [x] Factorial
 * [ ] Power
 * [ ] Prefix Sum
 * [ ] Union Find
