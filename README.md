@@ -1,4 +1,6 @@
 # Plan:
+* [ ] Factorial
+* [ ] Power
 * [ ] Prefix Sum
 * [ ] Union Find
 * [ ] Segment Tree
