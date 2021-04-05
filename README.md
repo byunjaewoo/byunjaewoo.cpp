@@ -1,6 +1,6 @@
 # Plan:
 * [x] Factorial
-* [ ] Power
+* [x] Power
 * [ ] Prefix Sum
 * [ ] Union Find
 * [ ] Segment Tree
