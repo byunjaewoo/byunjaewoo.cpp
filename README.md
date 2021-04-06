@@ -3,7 +3,7 @@
 - [X] Power
 - [X] Prefix Sum
 - [X] Union Find
-- [ ] Segment Tree
+- [X] Segment Tree
 - [X] Fenwick Tree
 - [ ] Geometry - point, line
 - [ ] Dijkstra
