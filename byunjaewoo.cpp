@@ -57,6 +57,23 @@ namespace byunjaewoo {
         }
         vector<int> G;
     };
+
+    template<int N>
+    class FenwickTree {
+    public:
+        FenwickTree() {Tree.resize(N, 0);}
+        void Update(int k, long long v) {
+            for(int i=k; i<N; i+=i&-i) Tree[k] += v;
+        }
+        long long Query(int l, int r) {return Query(r) - Query(l - 1);}
+        long long Query(int e) {
+            long long res = 0;
+            for(int i=e; i>=0; i-=i&-i) res += Tree[i];
+            return res;
+        }
+    private:
+        vector<int> Tree;
+    };
 }
 using namespace byunjaewoo;
 
