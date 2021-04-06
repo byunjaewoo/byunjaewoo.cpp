@@ -1,28 +1,28 @@
 # Plan:
-* [X] Factorial
-* [X] Power
-* [X] Prefix Sum
-* [X] Union Find
-* [ ] Segment Tree
-* [X] Fenwick Tree
-* [ ] Geometry - point, line
-* [ ] Dijkstra
-* [ ] Bellman Ford
-* [ ] Floyd Warshall
-* [ ] Minimum Spanning Tree
-* [ ] Topological Sort
-* [ ] Eulerian Trail
-* [ ] Strongly Connected Component
-* [ ] Articulation Point
-* [ ] Network Flow
-* [ ] Maximum Bipartite Matching
-* [ ] Lowest Common Ancestor
-* [ ] Lazy Propagation
-* [ ] Convex Hull
-* [ ] KMP
-* [ ] Persistent Segment Tree
-* [ ] Heavy - Light Decomposition
-* [ ] Segment Tree 2D
-* [ ] Dynamic Segment Tree
-* [ ] Dynamic Segment Tree 2D
-* [ ] BigInteger
+- [X] Factorial
+- [X] Power
+- [X] Prefix Sum
+- [X] Union Find
+- [ ] Segment Tree
+- [X] Fenwick Tree
+- [ ] Geometry - point, line
+- [ ] Dijkstra
+- [ ] Bellman Ford
+- [ ] Floyd Warshall
+- [ ] Minimum Spanning Tree
+- [ ] Topological Sort
+- [ ] Eulerian Trail
+- [ ] Strongly Connected Component
+- [ ] Articulation Point
+- [ ] Network Flow
+- [ ] Maximum Bipartite Matching
+- [ ] Lowest Common Ancestor
+- [ ] Lazy Propagation
+- [ ] Convex Hull
+- [ ] KMP
+- [ ] Persistent Segment Tree
+- [ ] Heavy - Light Decomposition
+- [ ] Segment Tree 2D
+- [ ] Dynamic Segment Tree
+- [ ] Dynamic Segment Tree 2D
+- [ ] BigInteger
