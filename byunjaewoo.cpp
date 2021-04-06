@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <vector>
+#include <functional>
 using namespace std;
 
 namespace byunjaewoo {
@@ -75,6 +76,61 @@ namespace byunjaewoo {
         }
     private:
         vector<int> Tree;
+    };
+
+    template<char Op = '+', int N = (1<<20)>
+    class SegmentTree {
+    public:
+        SegmentTree() {
+            S = (1 << (32 - __builtin_clz(N - 1)));
+            Tree.resize(2 * S);
+            if(Op == '+') {
+                f = [](long long a, long long b) {return a + b;};
+                z = 0;
+            }
+            else if(Op == '*') {
+                f = [](long long a, long long b) {return a * b;};
+                z = 1;
+            }
+            else if(Op == '|') {
+                f = [](long long a, long long b) {return a | b;};
+                z = 0;
+            }
+            else if(Op == '&') {
+                f = [](long long a, long long b) {return a & b;};
+                z = -1;
+            }
+            else if(Op == '^') {
+                f = [](long long a, long long b) {return a ^ b;};
+                z = 0;
+            }
+            fill(Tree.begin(), Tree.end(), z);
+        }
+        void Update(int k, long long v) {
+            k += S-1;
+            Tree[k] = f(Tree[k], v);
+            for(k >>= 1; k; k >>= 1)
+                Tree[k] = f(Tree[k << 1], Tree[k << 1 | 1]);
+        }
+        void Change(int k, long long v) {
+            k += S-1;
+            Tree[k] = v;
+            for(k >>= 1; k; k >>= 1)
+                Tree[k] = f(Tree[k << 1], Tree[k << 1 | 1]);
+        }
+        long long Query(int l, int r) {
+            long long res = 0;
+            for(l += S-1, r += S-1; l < r; l >>= 1, r >>= 1) {
+                if(l & 1) res = f(res, Tree[l++]);
+                if(!(r & 1)) res = f(res, Tree[r--]);
+            }
+            if(l == r) res = f(res, Tree[l]);
+            return res;
+        }
+    private:
+        int S; long long z;
+        function<long long(long long, long long)> f;
+        vector<long long> Tree;
     };
 }
 using namespace byunjaewoo;
