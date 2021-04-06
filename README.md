@@ -4,7 +4,7 @@
 * [X] Prefix Sum
 * [X] Union Find
 * [ ] Segment Tree
-* [] Fenwick Tree
+* [X] Fenwick Tree
 * [ ] Geometry - point, line
 * [ ] Dijkstra
 * [ ] Bellman Ford
