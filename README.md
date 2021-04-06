@@ -1,7 +1,7 @@
 # Plan:
 * [x] Factorial
 * [x] Power
-* [] Prefix Sum
+* [x] Prefix Sum
 * [ ] Union Find
 * [ ] Segment Tree
 * [ ] Fenwick Tree
