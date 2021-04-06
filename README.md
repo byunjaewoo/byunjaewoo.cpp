@@ -2,7 +2,7 @@
 * [X] Factorial
 * [X] Power
 * [X] Prefix Sum
-* [ ] Union Find
+* [X] Union Find
 * [ ] Segment Tree
 * [ ] Fenwick Tree
 * [ ] Geometry - point, line
