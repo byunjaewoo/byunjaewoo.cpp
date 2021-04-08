@@ -10,6 +10,11 @@ namespace byunjaewoo {
         return a * Factorial(a - 1);
     }
 
+    long long Factorial(int a, long long Mod) {
+        if(a == 1) return 1;
+        return ((long long)a * Factorial(a - 1)) % Mod;
+    }
+
     long long Pow(int a, int x) {
         if(x==0) return 1;
         if(x==1) return a;
